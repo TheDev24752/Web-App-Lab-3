@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Feb 13th</title>
+    <script src="js/myjavascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    
+    <meta name="description" content="The menu application made in class on February 14th">
+    <meta name="author" content="Jaedon Teel">
+  </head>
+  
+  <div id="menu_desc">
+    <p id="-1" class="menu-pop"></p>
+    <p id="0" class="menu-pop" style="left: 20%;">
+	A ThinkPad T20 from 2000<br>
+	CPU: 650MHz<br>
+	RAM: 128MB<br>
+	HDD: 6GB<br>
+	PRICE: $200<br>
+	RATING: 4.5/5.0</p>
+    <p id="1" class="menu-pop" style="left: 40%;">
+	An HP Pavilion ZE4600<br>
+	CPU: 1.7GHz<br>
+	RAM: 128MB<br>
+	HDD: 10GB<br>
+	PRICE: $300<br>
+	RATING: 4.7/5.0</p>
+    <p id="2" class="menu-pop" style="left: 60%;">
+	A Dell Latitude 2110<br>
+	CPU: 1.83GHz<br>
+	RAM: 4GB<br>
+	SSD: 128GB<br>
+	PRICE: $500<br>
+	RATING: no ratings</p>
+    <p id="3" class="menu-pop" style="right: 40%;">
+	A Xiaomi Mi 1<br>
+	RES: 480px x 854px<br>
+	SIZE: 4"<br>
+	PRICE: $100<br>
+	RATING: 3.6/5.0</p>
+    <p id="4" class="menu-pop" style="right: 20%;">
+	A Blackberry 7280<br>
+	LCD: 240px x 160px<br>
+	STORAGE: 16MB<br>
+	SIZE: 4.4" x 2.9" x 0.94"<br>
+	PRICE: $50<br>
+	RATING: 3.7/5.0</p>
+    <p id="5" class="menu-pop" style="left: 20%;">
+	An iPhone Gen 1<br>
+	RES: 480px x 320px<br>
+	SIZE: 3.5"
+	RAM: 128MB<br>
+	Storage: 4GB<br>
+	PRICE: $200<br>
+	RATING: 4.2/5.0</p>
+    <p id="6" class="menu-pop" style="left: 40%;">
+	A Logitech Wired Mouse from 2003<br>
+	TRACKING: Optical<br>
+	INTERFACE: USB<br>
+	PRICE: $10<br>
+	RATING: 3.9/5.0</p>
+    <p id="7" class="menu-pop" style="left: 60%;">
+	An HP X900 Mouse<br>
+	TRACKING: Optical<br>
+	INTERFACE: USB<br>
+	DPI: 1000DPI<br>
+	PRICE: $10<br>
+	RATING: 4.1/5.0</p>
+    <p id="8" class="menu-pop" style="right: 40%;">
+	A Dell Model SK-8110 Keyboard<br>
+	SWITCHES: Mechanical<br>
+	INTERFACE: PS/2<br>
+	PRICE: $30<br>
+	RATING: 4.8/5.0</p>
+    <p id="9" class="menu-pop" style="right: 20%;">
+	An Apple M2452 Keyboard<br>
+	SWITCHES: Membrane dome<br>
+	INTERFACE: USB<br>
+	PRICE: $30<br>
+	RATING: 4.9/5.0</p>
+  </div>
+
+  <body bgcolor="#fff">
+    <div class="title">
+      <img src="img/logo.png" alt="Logo"/>
+      SPACE
+    </div>
+    <div class="cart1" id="mycart">
+      <div id="mycart" class="cartcount"> </div>
+      <img src="img/cart.jpg" />
+    </div>
+	<br>
+	
+	<div>
+	  <ul class="menu-bar">
+	    <li class="menu-item"><a href="#" class="drp">Laptops</a>
+		  <div class="menu-content">
+		    <a href="#">ThinkPad T20</a><br>
+		    <a href="#">HP Pavilion ZE4600</a><br>
+		    <a href="#">Dell Latitude 2110</a><br>
+		  </div>
+	    </li>
+	    <li class="menu-item"><a href="#" class="drp">Phones</a>  
+		  <div class="menu-content">
+		    <a href="#">Xiaomi M1</a><br>
+		    <a href="#">Blackberry 7280</a><br>
+		    <a href="#">iPhone Gen 1</a><br>
+		  </div>
+	    </li>
+	    <li class="menu-item"><a href="#" class="drp">Mice</a>  
+		  <div class="menu-content">
+		    <a href="#">2003 Logitech Wired Mouse</a><br>
+		    <a href="#">HP X900</a><br>
+		  </div>
+	    </li>
+	    <li class="menu-item"><a href="#" class="drp">Keyboards</a>  
+	      <div class="menu-content">
+		    <a href="#">Dell PS/2 Keyboard</a><br>
+		    <a href="#">Apple M2452</a><br>
+		  </div>
+	    </li>
+	  </ul>
+	</div>
+	
+	<div class="catalog">
+	  <h2>Catalog:</h2>
+	  <ul class="catalog-list">
+	  <li style="width:100%">
+	    <div class="catalog-item" onclick="display_desc(0)">
+		    <img src="img/ThinkPadT20.jpg" alt="ThinkPadT20">
+        <br>
+        ThinkPad T20
+        <br>
+        <button class="addToCart" onclick="addToCart('ThinkPad T20')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(1)">
+		    <img src="img/HP Pavilion ZE4600.jpg" alt="HP Pavilion ZE4600">
+        <br>
+        HP Pavilion ZE4600
+        <br>
+        <button class="addToCart" onclick="addToCart('HP Pavilion ZE4600')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(2)">
+		    <img src="img/Dell Latitude 2110.jpg" alt="Dell Latitude 2110">
+        <br>
+        Dell Latitude 2110
+        <br>
+        <button class="addToCart" onclick="addToCart('Dell Latitude 2110')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(3)">
+		    <img src="img/Xiaomi_M1.jpg" alt="Xiaomi_M1">
+        <br>
+        Xiaomi M1
+        <br>
+        <button class="addToCart" onclick="addToCart('Xiaomi M1')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(4)">
+		    <img src="img/Blackberry 7280.jpg" alt="Blackberry 7280">
+        <br>
+        Blackberry 7280
+        <br>
+        <button class="addToCart" onclick="addToCart('Blackberry 7280')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		</li>
+	  <li style="width:100%">
+		  <div class="catalog-item" onclick="display_desc(5)">
+		    <img src="img/iphone1.png" alt="iPhone Gen 1">
+        <br>
+        iPhone Gen 1
+        <br>
+        <button class="addToCart" onclick="addToCart('iPhone Gen 1')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(6)">
+		    <img src="img/logitech 2003.jpg" alt="Logitech 2003">
+        <br>
+        2003 Logitech Wired Mouse
+        <br>
+        <button class="addToCart" onclick="addToCart('2003 Logitech Wired Mouse')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(7)">
+		    <img src="img/HP X900.webp" alt="HP X900">
+        <br>
+        HP X900
+        <br>
+        <button class="addToCart" onclick="addToCart('HP X900')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(8)">
+		    <img src="img/dell keyboard.png" alt="dell keyboard">
+        <br>
+        Dell PS/2 Keyboard
+        <br>
+        <button class="addToCart" onclick="addToCart('Dell PS/2 Keyboard')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		  <div class="catalog-item" onclick="display_desc(9)">
+		    <img src="img/apple keyboard.jpg" alt="apple keyboard">
+        <br>
+        Apple M2452
+        <br>
+        <button class="addToCart" onclick="addToCart('Apple M2452')">
+          <img src="img/add_to_cart.png" />
+        </button>
+		  </div>
+		</li>
+	  </ul>
+	</div>
+  </body>
+</html>
